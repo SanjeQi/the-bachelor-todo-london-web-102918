@@ -51,8 +51,7 @@ end
 
 def get_average_age_for_season(data, season)
   no = []
-  suma = no.sum
-  average = no.sum / (no.length - 1)
+  average = (no.sum / (no.length - 1))
   data.each do |season_key, season_data|
       if season_key["season"] == "season"
             season_data.each do |hash_elem|
